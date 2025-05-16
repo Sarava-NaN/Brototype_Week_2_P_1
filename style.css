@@ -619,8 +619,6 @@ footer p a {
     line-height: 1;
   }
 }
-/*  */
-/*  */
 @media (width < 785px) {
   .home {
     gap: 5rem;
