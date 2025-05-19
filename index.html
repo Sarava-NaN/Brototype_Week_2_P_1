@@ -234,24 +234,37 @@
     <!-- Contact -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
-      <form action="">
+      <!-- Your Form -->
+      <div class="validation">
+        <p id="error-message" style="color: red"></p>
+        <p id="success-message" style="color: green"></p>
+      </div>
+      <form id="contact-form">
         <div class="input-group">
           <div class="input-box">
-            <input type="text" placeholder="Your Name" id="name" required />
-            <input type="email" placeholder="Your Email" id="email" required />
-            <!-- </div> -->
-            <!-- <div class="input-box"> -->
             <input
-              type="number"
+              type="text"
+              placeholder="Your Name"
+              id="name"
+              name="user_name"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              id="email"
+              name="user_email"
+            />
+            <input
+              type="tel"
               placeholder="Phone Number"
               id="phone"
-              required
+              name="user_phone"
             />
           </div>
           <div class="input-group-2">
             <textarea
-              name=""
               id="message"
+              name="message"
               cols="30"
               rows="10"
               placeholder="Your Message"
@@ -262,7 +275,6 @@
               class="btn"
               id="submit"
               onclick="sendMail()"
-              required
             />
           </div>
         </div>

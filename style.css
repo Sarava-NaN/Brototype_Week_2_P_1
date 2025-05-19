@@ -434,12 +434,20 @@ span {
   cursor: pointer;
   box-shadow: 0 0 25px var(--main-color);
 }
+/*  */
 /* Contact */
+.validation {
+  text-align: center;
+  height: 50px;
+}
+.validation p {
+  font-size: 3.5rem;
+}
 .contact {
   background-color: var(--bg-color);
 }
 .contact h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: white;
 }
 .contact form {
@@ -683,6 +691,13 @@ footer p a {
 }
 
 @media (width < 551px) {
+  .validation {
+    text-align: center;
+    height: 30px;
+  }
+  .validation p {
+    font-size: 2.5rem;
+  }
   .header {
     padding: 2rem 6% 4rem;
     width: 100%;
